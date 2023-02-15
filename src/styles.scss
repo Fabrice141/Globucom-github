@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/************ bootstrap-grid ******************/
+
+
+
+/********** abstracts *********/
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+
+
+// /********** base *********/
+@import "./sass/base/animations";
+@import "./sass/base/base";
+@import "./sass/base/typography";
+@import "./sass/base/utilities";
+
+
+// /********* layout  **********/
+ @import "./sass/layout/grid";
+
+
+

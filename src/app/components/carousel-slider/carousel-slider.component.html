@@ -1,0 +1,60 @@
+<div *ngIf="images && images.length" class="carousel-container d-flex direction-row justify-content-center "
+  [ngStyle]="  selectedIndex === 0 ? { 'background-color': images[0].color} : { 'background-color': ''  }"
+  [ngStyle]="  selectedIndex === 1 ? { 'background-color': images[1].color} : { 'background-color': ''  }"
+  [ngStyle]="  selectedIndex === 2 ? { 'background-color': images[2].color} : { 'background-color': ''  }">
+  <div class="container d-flex  direction-row align-items-start ">
+
+    <div class="group">
+
+      <div class="carousel-group_slide-container">
+
+        <button *ngIf="controls" class="btn-carousel btn-prev">
+          <i class="fa fa-arrow-up icon-carousel icon-prev" (click)="onPrevClick()"></i>
+        </button>
+        <span class="dot" [ngClass]="{'active': selectedIndex === 0}" (click)="selectImage(0)">
+        </span>
+        <span class="dot" [ngClass]="{'active': selectedIndex === 1}" (click)="selectImage(1)">
+        </span>
+        <span class="dot" [ngClass]="{'active': selectedIndex === 2}" (click)="selectImage(2)">
+        </span>
+
+
+        <button *ngIf="controls" class="btn-carousel btn-next">
+          <i class="fa fa-arrow-down icon-carousel icon-next" (click)="onNextClick()"></i>
+        </button>
+
+      </div>
+
+      <div class="carousel-text-container">
+        <h1>Concevoir, construire efficacement partout au cameroun et dans la zone CEMAC</h1>
+        <ul class="carousel-text_items">
+          <li class="carousel-text_item"
+            [ngStyle]="  selectedIndex === 0 ? { 'color': '#ffffff' } : { 'color': '#000'  }  ">
+            <span>&#35;</span>{{images[0].description}}
+          </li>
+          <li class="carousel-text_item"
+            [ngStyle]="  selectedIndex === 1 ?  { 'color': '#ffffff'} : { 'color': '#000'  }">
+            <span>&#35;</span>{{images[1].description}}
+          </li>
+          <li class="carousel-text_item"
+            [ngStyle]=" selectedIndex === 2 ? { 'color': '#ffffff' } : { 'color': '#000'  }">
+            <span>&#35;</span> {{images[2].description}}
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="carousel-image-container">
+      <img *ngFor="let image of images; let i=index" [src]="image.imageSrc" [alt]="image.imageAlt" height="300"
+        width="500" [ngStyle]=" selectedIndex === i ? {  'display' : 'block'  } : {'display' : 'none'}" class="fade"
+        [ngClass]="{'mvtBottom' : selectedIndex === 0  }" [ngClass]="{'mvtRight' : selectedIndex === 1  }"
+        [ngClass]="{'mvtBottom' : selectedIndex === 2  }">
+    </div>
+
+  </div>
+
+
+
+</div>

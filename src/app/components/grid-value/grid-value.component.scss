@@ -1,0 +1,50 @@
+#value {
+  font-size: 1.6rem;
+}
+
+.value_text {
+  text-align: center;
+}
+
+.value_text>h4>span {
+  color: #205F8F;
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: #b8d5eb;
+  border-radius: 7%/50%;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.value_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.value_items {
+  width: 33.3333333333%;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.value_items:last-child {
+  padding-right: 0;
+}
+
+.value_items_text {
+  padding-left: 10px;
+}
+
+
+.value_items_icon>i {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #205F8F;
+  color: #fff;
+  clip-path: circle(50.0% at 50% 50%);
+}

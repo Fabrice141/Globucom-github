@@ -1,0 +1,98 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin absCenter {
+
+  top: 50%;
+  left: 50%;
+
+}
+
+/*   lorqu'on veut modifier le responsive
+    ORDER: Base + typography > general layout + grid > page layout
+  */
+
+
+@mixin responsive ($breakpoint) {
+
+
+  @if $breakpoint ==ssm {
+    @media (max-width: 36em) {
+      @content
+    }
+
+    ; //  <576px
+  }
+
+  ;
+
+  /*   phone */
+  @if $breakpoint ==sm {
+    @media (min-width: 36em) {
+      @content
+    }
+
+    ; // >= 576px
+  }
+
+  ;
+
+  /*   tab-port */
+  @if $breakpoint ==md {
+    @media (min-width: 48em) {
+      @content
+    }
+
+    ; // >= 768px
+  }
+
+  ;
+
+  /*  tab-land   */
+  @if $breakpoint ==lg {
+    @media (min-width: 62em) {
+      @content
+    }
+
+    ; // >= 992px
+  }
+
+  ;
+
+  /*  big-desktop */
+  @if $breakpoint ==xl {
+    @media (min-width: 75em) {
+      @content
+    }
+
+    ; // >= 1200px
+  }
+
+  ;
+
+  /*  big small-desktop */
+  @if $breakpoint ==xxl {
+    @media (min-width: 87.5em) {
+      @content
+    }
+
+    ; // >= 1400px
+  }
+
+  ;
+
+  @if $breakpoint ==tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content
+    }
+
+    ; //900px
+  }
+
+}

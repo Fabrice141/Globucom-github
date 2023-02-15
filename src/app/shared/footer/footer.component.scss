@@ -1,0 +1,45 @@
+footer {
+  background-color:  #0f384c;;
+  color: rgb(206, 206, 206);
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 6rem 0;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+
+.img-logo {
+  width: 8rem;
+  height: 8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.i {
+ padding: 0 11rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  margin: 0;
+  padding: 0;
+}
+
+ul>li>a {
+  text-decoration: none;
+  color: #d3d3d3;
+}
+
+ul>li:hover {}
+
+ul>li>a:hover {
+  color: #0D9ED7;
+}

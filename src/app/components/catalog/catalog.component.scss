@@ -1,0 +1,26 @@
+#tabs {}
+
+.tabs-container {
+  background: #f5f5ff;
+  list-style-type: none;
+  padding: 2rem;
+  width: 70rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tab-link {
+  cursor: pointer;
+  color: #0D9ED7;
+}
+
+// .tabs-container .tab-link {
+//   position: relative;
+//   text-align: center;
+// }
+
+.active {
+  border-bottom: 0.2rem solid #000;
+  transition: ease-in-out .3s;
+  color: #000;
+}

@@ -1,0 +1,80 @@
+#mission {
+  font-size: 1.6rem;
+}
+
+.mission_text {
+  padding-top: 8rem;
+  width: 50%;
+  margin-right: 8%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+
+}
+
+
+.mission_text>h4 {
+  text-align: center;
+}
+
+.mission_text>h4>span {
+  color: #205F8F;
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: #b8d5eb;
+  border-radius: 7%/50%;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+
+.mission_text>p {
+  padding-top: 3rem;
+}
+
+.mission_image {
+  position: relative;
+}
+
+.mission_image>.dot1 {
+  position: absolute;
+  top: 35%;
+  left: -18%;
+  z-index: -1;
+
+}
+
+.mission_image>img {
+  border-radius: 4rem 900em 999em 4rem;
+  max-width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.mission_image_subtile {
+  color: #205F8F;
+  text-align: center;
+  padding: 1rem 8rem;
+  background-color: #b8d5eb;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: 10%/50%;
+  position: absolute;
+  top: 70%;
+  left: -10%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.mission_image_subtile>p {
+  padding-top: 1rem;
+}
+
+img {
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+

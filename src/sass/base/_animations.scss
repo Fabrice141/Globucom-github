@@ -1,0 +1,63 @@
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+ 
+  .mvtTop{
+    animation-name: mvtTop;
+    animation-duration:  0.75s;
+  }
+ 
+ .mvtRight{
+  animation-name: mvtRight;
+  animation-duration:  0.75s;
+ }
+ 
+ .mvtBottom {
+  animation-name: mvtBottom;
+  animation-duration:  0.75s;
+ }
+ 
+ 
+ 
+  @keyframes fade {
+    from {
+      opacity: .4; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 
+ 
+  @keyframes mvtRight {
+    from {
+      transform : translateX(500px)
+    }
+    to {
+      transform: translateX(0);
+    }
+  
+  }
+ 
+ 
+  @keyframes mvtBottom {
+    from {
+      transform : translateY(-500px)
+    }
+    to {
+      transform: translatey(0);
+    }
+  
+  }
+ 
+ 
+  @keyframes mvtTop {
+    from {
+      transform : translateY(500px)
+    }
+    to {
+      transform: translateY(0);
+    }
+  
+  }

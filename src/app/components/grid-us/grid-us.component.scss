@@ -1,0 +1,52 @@
+#why_us {
+  font-size: 1.6rem;
+}
+
+
+.why_us_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+}
+
+
+.why_us_card {
+
+  background-color: #b8d5eb;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.why_us_card_icon {
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+
+.why_us_card_text>* {
+  padding-bottom: 1rem;
+}
+
+.ki>h4 {
+  text-align: center;
+}
+
+.ki>h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h4>span {
+  color: #205F8F;
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: #b8d5eb;
+  border-radius: 7%/50%;
+  font-weight: bold;
+  font-size: 1.6rem;
+}

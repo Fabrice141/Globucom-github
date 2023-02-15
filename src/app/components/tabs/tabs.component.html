@@ -1,0 +1,25 @@
+<div id="tabs" class="container mb-4 ">
+  <ul class="tabs-container d-flex direction-row justify-content-between ">
+    <li (click)="onTabClick('t1')" [class.active]="activeTab == 't1'" class="tab-link">
+      Tous</li>
+    <li (click)="onTabClick('t2')" [class.active]="activeTab == 't2'" class="tab-link">
+      Conception 2D</li>
+    <li (click)="onTabClick('t3')" [class.active]="activeTab == 't3'" class="tab-link">
+      Conception 3D</li>
+  </ul>
+</div>
+
+<div class="row" *ngIf="activeTab == 't1'">
+  <app-card-images [images]="images"></app-card-images>
+  <app-card-images [images]="images"></app-card-images>
+</div>
+
+<div class="row" *ngIf="activeTab == 't2'">
+  <app-card-images [images]="images1"></app-card-images>
+  <app-card-images [images]="images1"></app-card-images>
+</div>
+
+<div class="row" *ngIf="activeTab == 't3'">
+  <app-card-images [images]="images2"></app-card-images>
+  <app-card-images [images]="images2"></app-card-images>
+</div>

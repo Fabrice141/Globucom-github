@@ -1,0 +1,49 @@
+// #history {
+
+
+//   }
+
+
+.history_text {
+  padding-top: 8rem;
+  padding-right: 8rem;
+}
+
+.history_text>p {
+  padding-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.history_text>h4 {
+  text-align: center;
+}
+
+.history_text>h4>span {
+  color: #205F8F;
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: #b8d5eb;
+  border-radius: 7%/50%;
+  font-weight: bold;
+  font-size: 1.6rem
+}
+
+
+.history_image {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: 21.5rem;
+  left: -6.5rem;
+}
+
+
+.history_image>img {
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  object-fit: cover;
+}

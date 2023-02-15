@@ -1,0 +1,207 @@
+.carousel-container {
+  min-height: 60vh;
+  overflow: hidden;
+  background-color: #79CAF1;
+
+}
+
+
+/***************************** css group carousel *****************************/
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+/**** group_slide ****/
+
+.dot {
+  cursor: pointer;
+  height: 1.3rem;
+  width: 1.3rem;
+  margin: 0.2rem 0.5rem;
+  border: 0.1rem solid #363232;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #000;
+}
+
+
+button {
+  background: #fff;
+  border: none;
+}
+
+.carousel-group_slide-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+  background-color: #ffffff;
+  opacity: 50%;
+  height: 13rem;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.carousel-group_slide-container>* {
+  margin-bottom: 0.6rem;
+}
+
+
+/**************             **************/
+.carousel-text-container {
+  width: 50rem;
+}
+
+.carousel-text-container>h1 {
+  margin-bottom: 3rem;
+}
+
+.carousel-text-container>ul {
+  list-style-type: none;
+}
+
+.carousel-text-container>ul>li>span {
+  margin-right: 0.6rem;
+
+}
+
+.carousel-text_item {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
+
+.carousel-text_items>*:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/****************            ******************/
+.carousel-image-container {
+  overflow: hidden;
+  margin-left: 4rem;
+}
+
+img {
+  max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+.carousel-image-container .image-active {
+  display: none;
+}
+
+/********************* animations  ***************************/
+
+
+
+
+/***** *****/
+
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .group {
+    margin-left: 15px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 768px;
+    align-items: center;
+    margin: auto;
+
+  }
+
+  .carousel-group_slide-container {
+    margin-right: 5px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+  .carousel-group_slide-container {
+    margin-right: 0;
+    transform: rotate(90deg);
+  }
+
+
+
+  img {
+    height: 50px;
+    width: 150px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+
+  .group {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+  .carousel-image-container {
+    height: 75%;
+    width: 80%;
+    overflow: hidden;
+    margin-left: 30px;
+  }
+
+  img {
+    height: 200px;
+    width: 450px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .carousel-text-container {
+    width: 400px;
+  }
+
+  .carousel-text-container>h1 {
+
+    margin-bottom: 20px;
+    font-size: 25px
+  }
+
+
+  .carousel-group_slide-container {
+    margin-right: 40px;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {}

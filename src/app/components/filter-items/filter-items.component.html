@@ -1,0 +1,21 @@
+<app-filter [list]="filterList" (onFilterChange)="filterChange($event)">
+</app-filter>
+
+
+<div style="padding:15px;">
+
+  <div class="header">
+    <div *ngFor="let item of header">
+      {{item | titlecase}}
+    </div>
+  </div>
+
+  <div *ngFor="let item of data" class="data">
+    <div>{{item.country}}</div>
+    <div>{{item.sector}}</div>
+    <div>{{item.group}}</div>
+    <div>{{item.rank}}</div>
+  </div>
+
+
+</div>

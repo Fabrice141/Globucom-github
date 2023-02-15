@@ -1,0 +1,38 @@
+.jumbotron {
+  height: 50vh;
+  overflow: hidden;
+  background-color: #205F8F;
+  position: relative;
+}
+
+.jumbotron_text {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 15rem 0;
+}
+
+
+
+.jumbotron_image {
+  position: relative;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.jumbotron_image img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 699em 40px 40px 999em;
+  /* clip-path: circle(120% at right); */
+}
+
+.curved svg {
+  position: absolute;
+  bottom: -3rem;
+
+}

@@ -1,0 +1,32 @@
+.infos {
+    padding: 0.75rem 12rem;
+
+    &--items>ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &--items>ul>li {
+        display: block;
+    }
+
+    &--items>ul>li>a {
+        text-decoration: none;
+        color: #205E8E;
+    }
+
+    &--items>ul>li>a:hover {
+        color: #376e99;
+    }
+
+
+    &--items>ul>li {
+        padding-left: 2rem;
+    }
+
+}
+
+.bg-color {
+    background-color: #F5F5F5;
+}
